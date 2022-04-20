@@ -7,7 +7,7 @@
     </i>
   </u>
   <br>
-  <form [formGroup]="formValue" >
+  <form [formGroup]="formValue" onsubmit="UpdateEmployee()" >
     <div class="form-group">
       <label for="name">Name:</label>
       <input class="form-control" name="name" id="name" type="text" formControlName="Name" required ngModel>
@@ -103,6 +103,6 @@
     </select>
   </div>
 
-    <button id="Update"class="btn btn-primary" routerLink="/view">Update</button>
+    <button id="Update"(click)="UpdateDetails()" class="btn btn-primary" routerLink="/view">Update</button>
   </form>
   </div>
