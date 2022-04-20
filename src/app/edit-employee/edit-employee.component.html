@@ -1,0 +1,108 @@
+
+<router-outlet></router-outlet>
+<div class="container">
+  <u>
+    <i>
+      <h3>Update Employee</h3>
+    </i>
+  </u>
+  <br>
+  <form [formGroup]="formValue" >
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input class="form-control" name="name" id="name" type="text" formControlName="Name" required ngModel>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Id:</label>
+      <input type="email" id="email" name="email" class="form-control"  formControlName="Email"ngModel >
+    </div>
+
+
+      <!--Gender-->
+  <h5>Gender:</h5>
+  <div class="form-group">
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="Gender" id="GenderMAle" value="Male" checked formControlName="Gender"ngModel>
+    <label class="form-check-label" for="exampleRadios1">
+      Male
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="Gender" id="GenderFeMAle" value="Female" formControlName="Gender"ngModel>
+    <label class="form-check-label" for="exampleRadios2">
+      Female
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="Gender" id="Other" value="Others" formControlName="Gender"ngModel>
+    <label class="form-check-label" for="exampleRadios3">
+      Others
+    </label>
+  </div>
+  </div>
+
+  <div class="form-group">
+    <label for="Location">Location</label>
+    <input class="form-control" name="Location" id="Location" formControlName="Location"ngModel>
+  </div>
+
+    <div class="form-group">
+      <label for="Languages">Preferred Language :</label>
+      <select class="form-control" name="Languages" id="Languages" formControlName="Languages"ngModel>
+        <option>C</option>
+        <option>C++</option>
+        <option>Python</option>
+        <option>Java</option>
+        <option>Javascript</option>
+        <option>Angular</option>
+        <option>PHP</option>
+        <option>C#</option>
+        <option>Asp.net</option>
+      </select>
+    </div>
+
+   <!--Employement Type-->
+  <h5>Employement Type:</h5>
+    <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="EmployementType" id="Type-Full-Time" value="Full-Time" formControlName="EmployementType" checked ngModel>
+      <label class="form-check-label" for="exampleRadios1">
+        Full-Time
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="EmployementType" id="Type-Intern" value="Intern" formControlName="EmployementType"ngModel>
+      <label class="form-check-label" for="exampleRadios2">
+        Intern
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="EmployementType" id="Type-Part-Time" value="Part-Time" formControlName="EmployementType"ngModel>
+      <label class="form-check-label" for="exampleRadios3">
+        Part-Time
+      </label>
+    </div>
+  </div>
+
+
+  <!--Qualification-->
+
+  <div class="form-group">
+    <label for="Qualification">Qualification :</label>
+    <select class="form-control" name="Qualification" id="Qualification" formControlName="Qualification" ngModel>
+      <option>Btech</option>
+      <option>Mtech</option>
+      <option>BBA</option>
+      <option>BCA</option>
+      <option>MBA</option>
+      <option>BSC</option>
+      <option>Bcom</option>
+      <option>B.pharma</option>
+      <option>BA</option>
+    </select>
+  </div>
+
+    <button id="Update"class="btn btn-primary" routerLink="/view">Update</button>
+  </form>
+  </div>

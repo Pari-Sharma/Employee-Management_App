@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "Name": "parinita sharma",
+      "Email": "sharma.pari1413@gmail.com",
+      "Location": "Delhi",
+      "EmployementType": "Intern",
+      "Gender": "Female",
+      "Languages": "C++",
+      "Qualification": "BBA",
+      "id": 1
+    },
+    {
+      "Name": "parinita sharma",
+      "Email": "sharma.pari1413@gmail.com",
+      "Location": "Delhi",
+      "EmployementType": "Intern",
+      "Gender": "Female",
+      "Languages": "Python",
+      "Qualification": "Mtech",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

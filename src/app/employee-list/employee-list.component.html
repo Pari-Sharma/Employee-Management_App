@@ -1,0 +1,47 @@
+
+<router-outlet></router-outlet>
+<div class="card">
+  <div class="card-header">
+    Employee-List
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table" >
+        <thead>
+          <tr>
+            <th>
+              <button class="btn btn-primary" routerLink="/add">Add
+              </button>
+            </th>
+            <th> Id</th>
+            <th> Name</th>
+            <th> Email</th>
+            <th> Gender</th>
+            <th> EmployementType</th>
+            <th> Languages</th>
+            <th> Qualification</th>
+            <th> Location</th>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of EmployeeList">
+          <td></td>
+          <td>{{ row.id }}</td>
+          <td>{{ row.Name }}</td>
+          <td>{{ row.Email }}</td>
+          <td>{{ row.Gender }}</td>
+          <td>{{ row.EmployementType }}</td>
+          <td>{{ row.Languages }}</td>
+          <td>{{ row.Qualification }}</td>
+          <td>{{ row.Location }}</td>
+          <td><button class="btn btn-primary" routerLink="/Edit"(click)="onedit(row)">Edit</button></td>
+          <td><button id="delete" (click)="deleteEmployee(row)" >Delete</button></td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+</div>
