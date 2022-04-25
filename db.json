@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "Name": "parinita sharma",
+      "Email": "sharma.pari1413@gmail.com",
+      "Location": "",
+      "EmployementType": "",
+      "Gender": "",
+      "Languages": "",
+      "Qualification": ""
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
